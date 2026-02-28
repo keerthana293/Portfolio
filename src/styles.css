@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #0f172a;
+  --color-muted: #475569;
+  --color-accent: #2563eb;
+  --color-card: #ffffff;
+  --color-highlight: #e0f2fe;
+  --color-border: #dbe5f0;
+}
+
+[data-theme='dark'] {
+  --color-bg: #0b1120;
+  --color-text: #e5e7eb;
+  --color-muted: #9ca3af;
+  --color-accent: #38bdf8;
+  --color-card: #111827;
+  --color-highlight: #111827;
+  --color-border: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Roboto, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
