@@ -18,7 +18,7 @@ export default {
         body: ['Inter', 'Roboto', 'sans-serif']
       },
       boxShadow: {
-        soft: '0 12px 30px rgba(15, 23, 42, 0.08)'
+        soft: '0 12px 30px rgba(79, 70, 229, 0.10)'
       },
       keyframes: {
         fadeUp: {

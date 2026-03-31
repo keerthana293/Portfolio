@@ -5,23 +5,41 @@
 @tailwind utilities;
 
 :root {
-  --color-bg: #ffffff;
-  --color-text: #0f172a;
-  --color-muted: #475569;
-  --color-accent: #2563eb;
+  --color-bg: #f8f7ff;
+  --color-text: #1e1b4b;
+  --color-muted: #4b5563;
+  --color-accent: #6d28d9;
   --color-card: #ffffff;
-  --color-highlight: #e0f2fe;
-  --color-border: #dbe5f0;
+  --color-highlight: #ede9fe;
+  --color-border: #c4b5fd;
+
+  --color-hero-bg: #f8f7ff;
+  --color-about-bg: #f8f7ff;
+  --color-education-bg: #f8f7ff;
+  --color-skills-bg: #f8f7ff;
+  --color-experience-bg: #f8f7ff;
+  --color-projects-bg: #f8f7ff;
+  --color-certifications-bg: #f8f7ff;
+  --color-contact-bg: #f8f7ff;
 }
 
 [data-theme='dark'] {
-  --color-bg: #0b1120;
-  --color-text: #e5e7eb;
-  --color-muted: #9ca3af;
-  --color-accent: #38bdf8;
-  --color-card: #111827;
-  --color-highlight: #111827;
-  --color-border: #1f2937;
+  --color-bg: #0f0e17;
+  --color-text: #e2e8f0;
+  --color-muted: #94a3b8;
+  --color-accent: #a78bfa;
+  --color-card: #1a1830;
+  --color-highlight: #1e1b3a;
+  --color-border: #312e6b;
+
+  --color-hero-bg: #0f0e17;
+  --color-about-bg: #111827;
+  --color-education-bg: #130f1e;
+  --color-skills-bg: #0d1f17;
+  --color-experience-bg: #1a1208;
+  --color-projects-bg: #0d1626;
+  --color-certifications-bg: #1a0f1e;
+  --color-contact-bg: #0d1a18;
 }
 
 * {
@@ -39,6 +57,20 @@ body {
   color: var(--color-text);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+.section-hero         { background: var(--color-hero-bg); }
+.section-about        { background: var(--color-about-bg); }
+.section-education    { background: var(--color-education-bg); }
+.section-skills       { background: var(--color-skills-bg); }
+.section-experience   { background: var(--color-experience-bg); }
+.section-projects     { background: var(--color-projects-bg); }
+.section-certifications { background: var(--color-certifications-bg); }
+.section-contact      { background: var(--color-contact-bg); }
+
+[class^='section-'] {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 ::selection {

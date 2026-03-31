@@ -1,15 +1,6 @@
-import reactMoviesPreview from '../assets/Project Images/react-movies-preview.png';
-import grievanceSystemPreview from '../assets/Project Images/grievance-system-preview.svg';
-import microsoftCertFile from '../assets/Certifications/Certificates/1)Microsoft AZ 900.pdf';
-import oracleCertFile from '../assets/Certifications/Certificates/2)Oracle Certificate.pdf';
-import rpaCertFile from '../assets/Certifications/Certificates/3)RPA Certificate.pdf';
-import tensorflowCertFile from '../assets/Certifications/Certificates/4)Tensor Flow Certificate.pdf';
-import salesforceCertFile from '../assets/Certifications/Certificates/5)Cert5113961 Salesforce AI Associate 20241023.pdf';
-import microsoftLogo from '../assets/Certifications/Logos/1)Microsoft-certified-fundamentals-badge.svg-and-3-more-pages-Personal-Microso-1.webp';
-import oracleLogo from '../assets/Certifications/Logos/2)Oracle Badge.jpeg';
-import rpaLogo from '../assets/Certifications/Logos/3)Bot Aspirant Automation 360.jpeg';
-import tensorflowLogo from '../assets/Certifications/Logos/4)Tensorflow-developer-certificate-exam-v0-7z8toestgf071.webp';
-import salesforceLogo from '../assets/Certifications/Logos/5)Salesforce.jpeg';
+import nalPreview from '../assets/Project Images/image.png';
+import taskManagerPreview from '../assets/Project Images/task.png';
+import fuStepsPreview from '../assets/Project Images/fu.png';
 
 export const navLinks = [
   { href: '#home', label: 'Home' },
@@ -23,66 +14,50 @@ export const navLinks = [
 ];
 
 export const skills = [
-  { title: 'Frontend', icon: 'frontend', items: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Tailwind CSS'] },
-  { title: 'Backend', icon: 'backend', items: ['Python', 'FastAPI', 'REST APIs'] },
-  { title: 'Databases', icon: 'database', items: ['PostgreSQL', 'MySQL'] },
-  { title: 'State Management', icon: 'state', items: ['React Hooks', 'Context API'] },
-  { title: 'Testing', icon: 'testing', items: ['Selenium', 'PyTest'] },
-  { title: 'Tools & Platforms', icon: 'tools', items: ['Git', 'Docker', 'Postman', 'VS Code', 'Netlify'] },
-  { title: 'Cloud', icon: 'cloud', items: ['Microsoft Azure (AZ-900)'] },
+  { title: 'Programming Languages', icon: 'frontend', items: ['Python', 'JavaScript'] },
+  { title: 'Backend Technologies', icon: 'backend', items: ['Django', 'FastAPI'] },
+  { title: 'Frontend Technologies', icon: 'frontend', items: ['React.js', 'HTML', 'CSS', 'Bootstrap'] },
+  { title: 'Databases', icon: 'database', items: ['Oracle SQL', 'PostgreSQL'] },
+  { title: 'Tools & Libraries', icon: 'tools', items: ['AWS', 'Git', 'GitHub', 'NumPy'] },
 ];
 
 export const projects = [
   {
-    name: 'React Movies App',
-    summary: 'Built a movie discovery application using OMDb API.',
-    image: reactMoviesPreview,
-    features: ['Real-time search', 'Detail pages', 'Responsive UI'],
-    tech: ['React', 'JavaScript', 'API', 'CSS'],
-    links: [
-      { label: 'GitHub', href: 'https://github.com/' },
-      { label: 'Live Demo', href: 'https://reactmovieapp223.netlify.app/' },
-    ],
+    name: 'NAL (New Age Land) - Real Estate Web Application',
+    summary: 'NAL is a real estate web application where I developed backend APIs and integrated frontend features for user authentication, property listings, and dashboards. The project focuses on building scalable, user-friendly solutions for managing real estate operations.',
+    image: nalPreview,
+    tech: ['FastAPI', 'React.js', 'PostgreSQL', 'REST APIs'],
+    links: [],
   },
   {
-    name: 'Online Grievance Management System',
-    summary: 'Built a grievance submission and tracking frontend.',
-    image: grievanceSystemPreview,
-    features: ['Structured UI', 'Priority visualization', 'Responsive layout'],
-    tech: ['HTML', 'CSS'],
-    links: [{ label: 'GitHub', href: 'https://github.com/' }],
+    name: 'Task Manager Web Application',
+    summary: 'A full-stack Task Manager web application with user authentication and secure session management. Features RESTful APIs, a responsive React interface, and efficient CRUD operations for managing tasks. Designed for smooth performance with optimized database interactions and a user-friendly experience.',
+    image: taskManagerPreview,
+    tech: ['Django', 'React', 'PostgreSQL'],
+    links: [],
+  },
+  {
+    name: 'FuSteps - Education Related Platform',
+    summary: 'FuSteps is a career-focused platform that connects students, mentors, alumni, and recruiters in one place. It enables job discovery, mentorship booking, and community engagement through structured features like search, filters, and communication tools.',
+    image: fuStepsPreview,
+    tech: ['React.js', 'MySQL', 'Django'],
+    links: [],
   },
 ];
 
 export const certifications = [
   {
-    name: 'Salesforce Certified AI Associate',
-    year: '2024',
-    logo: salesforceLogo,
-    certificateFile: salesforceCertFile,
+    name: 'Python Programming',
+    issuer: 'HackerRank',
+    logo: new URL('../assets/Certifications/Logos/hacker.png', import.meta.url).href,
+    pdf: new URL('../assets/Certifications/Certificates/python_basic certificate.pdf', import.meta.url).href,
+    description: 'Solved coding challenges applying fundamental Python concepts and logic-building skills.',
   },
   {
-    name: 'Google TensorFlow',
-    year: '2024',
-    logo: tensorflowLogo,
-    certificateFile: tensorflowCertFile,
-  },
-  {
-    name: 'Automation Anywhere RPA Professional',
-    year: '2024',
-    logo: rpaLogo,
-    certificateFile: rpaCertFile,
-  },
-  {
-    name: 'Oracle Cloud Infrastructure',
-    year: '2023',
-    logo: oracleLogo,
-    certificateFile: oracleCertFile,
-  },
-  {
-    name: 'Microsoft Azure AZ-900',
-    year: '2023',
-    logo: microsoftLogo,
-    certificateFile: microsoftCertFile,
+    name: 'Web Development Training',
+    issuer: 'Internshala Trainings',
+    logo: new URL('../assets/Certifications/Logos/internshala.png', import.meta.url).href,
+    pdf: new URL('../assets/Certifications/Certificates/Web Development Training - Certificate of Completion.pdf', import.meta.url).href,
+    description: 'Front-end web development covering HTML, CSS, JavaScript, responsive interfaces, and interactive components.',
   },
 ];

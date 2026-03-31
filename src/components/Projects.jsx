@@ -3,7 +3,7 @@ import { projects } from '../data/portfolioData';
 
 function Projects() {
   return (
-    <section id="projects" className="scroll-mt-24 py-16" aria-labelledby="projects-title">
+    <section id="projects" className="section-projects scroll-mt-24 py-16" aria-labelledby="projects-title">
       <SectionHeading title="Projects" subtitle="Selected builds with practical, user-focused outcomes." />
       <h3 id="projects-title" className="sr-only">
         Project list
@@ -18,24 +18,13 @@ function Projects() {
             <img
               src={project.image}
               alt={`${project.name} project preview`}
-              className="mb-5 h-40 w-full rounded-xl border border-border object-cover"
+              className="mb-5 h-48 w-full rounded-xl border border-border object-contain bg-highlight"
               loading="lazy"
             />
             <h4 className="font-heading text-xl font-semibold text-text">{project.name}</h4>
-            <p className="mt-3 text-sm text-muted sm:text-base">
-              <span className="font-medium text-text">What I did:</span> {project.summary}
+            <p className="mt-3 text-sm text-muted sm:text-base text-justify">
+              {project.summary}
             </p>
-
-            <div className="mt-4">
-              <p className="text-sm font-medium text-text">Features</p>
-              <ul className="mt-2 flex flex-wrap gap-2 text-xs text-muted sm:text-sm">
-                {project.features.map((feature) => (
-                  <li key={feature} className="rounded-full bg-highlight px-3 py-1">
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-            </div>
 
             <p className="mt-4 text-sm text-muted">
               <span className="font-medium text-text">Tech:</span> {project.tech.join(', ')}

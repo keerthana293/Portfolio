@@ -34,7 +34,7 @@ function Navbar() {
     <header className="sticky top-0 z-40 border-b border-border bg-bg/90 backdrop-blur">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Main navigation">
         <a href="#home" className="font-heading text-lg font-semibold tracking-tight text-text transition hover:text-accent focus:outline-none focus-visible:ring-2 focus-visible:ring-accent">
-          Gowtham
+          Keerthana
         </a>
 
         <button
