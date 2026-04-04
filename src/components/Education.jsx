@@ -4,8 +4,8 @@ import sannidhiLogo from '../assets/University Logo/sannidhi.jpg';
 
 function Education() {
   return (
-    <section id="education" className="section-education scroll-mt-24 py-16" aria-labelledby="education-title">
-      <SectionHeading title="Education" subtitle="Academic foundation relevant to software engineering roles." />
+    <section id="education" className="section-education scroll-mt-24 py-8" aria-labelledby="education-title">
+      <SectionHeading title="Education" subtitle="" />
       <div className="space-y-6">
         <article className="rounded-2xl border border-border bg-card p-6 shadow-soft sm:p-8">
           <div className="flex items-center gap-4">

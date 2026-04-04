@@ -21,8 +21,8 @@ function SkillIcon({ type }) {
 
 function Skills() {
   return (
-    <section id="skills" className="section-skills scroll-mt-24 py-16" aria-labelledby="skills-title">
-      <SectionHeading title="Skills" subtitle="Technical stack grouped by capability." />
+    <section id="skills" className="section-skills scroll-mt-24 py-8" aria-labelledby="skills-title">
+      <SectionHeading title="Skills" subtitle="" />
       <h3 id="skills-title" className="sr-only">
         Skills list
       </h3>

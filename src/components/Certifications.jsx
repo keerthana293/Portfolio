@@ -3,7 +3,7 @@ import { certifications } from '../data/portfolioData';
 
 function Certifications() {
   return (
-    <section id="certifications" className="section-certifications scroll-mt-24 py-16" aria-labelledby="certifications-title">
+    <section id="certifications" className="section-certifications scroll-mt-24 py-8" aria-labelledby="certifications-title">
       <SectionHeading title="Certifications" subtitle="Verified credentials and learning milestones." />
       <h3 id="certifications-title" className="sr-only">Certification list</h3>
       <div className="grid gap-4 sm:grid-cols-2">

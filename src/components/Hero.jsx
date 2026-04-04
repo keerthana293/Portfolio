@@ -13,12 +13,12 @@ function SocialLink({ href, label, children }) {
 }
 
 function Hero() {
-  const highlights = ['React.js', 'FastAPI', 'Python', 'SQL', 'Git'];
+  const highlights = ['Python','FastAPI','React.js', 'MySQL', 'Git'];
 
   return (
-    <section id="home" className="section-hero flex min-h-[85vh] scroll-mt-24 flex-col justify-center py-16 sm:py-24" aria-labelledby="hero-title">
+    <section id="home" className="section-hero flex min-h-[85vh] scroll-mt-24 flex-col justify-center py-8 sm:py-16" aria-labelledby="hero-title">
       <h1 id="hero-title" className="animate-fadeUp font-heading text-3xl font-semibold leading-tight sm:text-5xl">
-        B V Keerthana
+        Keerthana B V
       </h1>
       <p className="mt-4 max-w-3xl animate-fadeUp text-base text-muted sm:text-xl">
         Software Engineer
@@ -34,7 +34,7 @@ function Hero() {
         ))}
       </ul>
       <p className="mt-6 max-w-2xl animate-fadeUp text-base text-muted">
-        I'm specialized in building full-stack web applications using FastAPI and React.js. I'm focusing on creating clean, well-structured APIs and developing responsive, dynamic user interfaces that deliver a seamless user experience.
+        I specialize in building full-stack web applications with FastAPI and React.js, crafting clean, well-architected APIs alongside responsive, dynamic user interfaces that deliver intuitive and seamless user experience.
       </p>
 
       <div className="mt-8 flex animate-fadeUp flex-wrap gap-3">

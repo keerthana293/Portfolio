@@ -11,8 +11,8 @@ const alstonairPoints = [
 
 const pyspidersPoints = [
   'Completed Python Full-Stack Development training with hands-on experience in backend and frontend development.',
-  'Built full-stack web applications using HTML, CSS, and JavaScript.',
-  'Learned application deployment and version control using Git and GitHub.',
+  'Built full-stack web applications using React.js and FastAPI.',
+  'Application deployment and version control using Git and GitHub.',
 ];
 
 function BulletList({ points }) {
@@ -48,7 +48,7 @@ function CompanyCard({ company, role, duration, logo, link, children }) {
 
 function Experience() {
   return (
-    <section id="experience" className="section-experience scroll-mt-24 py-16" aria-labelledby="experience-title">
+    <section id="experience" className="section-experience scroll-mt-24 py-8" aria-labelledby="experience-title">
       <SectionHeading title="Experience" subtitle="Professional contribution and real-world impact." />
       <div className="space-y-6">
         <CompanyCard

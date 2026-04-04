@@ -8,26 +8,20 @@ function Navbar() {
 
   useEffect(() => {
     const sectionIds = navLinks.map((link) => link.href.replace('#', ''));
-    const sections = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter(Boolean);
 
-    if (!sections.length) return undefined;
+    function onScroll() {
+      const scrollY = window.scrollY + 100;
+      let current = sectionIds[0];
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el && el.offsetTop <= scrollY) current = id;
+      }
+      setActiveSection(`#${current}`);
+    }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActiveSection(`#${entry.target.id}`);
-          }
-        });
-      },
-      { rootMargin: '-40% 0px -50% 0px', threshold: [0.2, 0.5, 0.8] }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-
-    return () => observer.disconnect();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (

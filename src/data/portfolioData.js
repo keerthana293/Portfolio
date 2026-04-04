@@ -15,10 +15,10 @@ export const navLinks = [
 
 export const skills = [
   { title: 'Programming Languages', icon: 'frontend', items: ['Python', 'JavaScript'] },
-  { title: 'Backend Technologies', icon: 'backend', items: ['Django', 'FastAPI'] },
-  { title: 'Frontend Technologies', icon: 'frontend', items: ['React.js', 'HTML', 'CSS', 'Bootstrap'] },
-  { title: 'Databases', icon: 'database', items: ['Oracle SQL', 'PostgreSQL'] },
-  { title: 'Tools & Libraries', icon: 'tools', items: ['AWS', 'Git', 'GitHub', 'NumPy'] },
+  { title: 'Backend Technologies', icon: 'backend', items: ['Django', 'FastAPI', 'Node.js'] },
+  { title: 'Frontend Technologies', icon: 'frontend', items: ['React.js', 'HTML5', 'CSS3', 'Bootstrap'] },
+  { title: 'Databases', icon: 'database', items: ['MySQL', 'Oracle SQL', 'PostgreSQL'] },
+  { title: 'Tools & Libraries', icon: 'tools', items: ['Git', 'GitHub', 'NumPy', 'VSCode', 'AWS (Basics)'] },
 ];
 
 export const projects = [
@@ -51,13 +51,13 @@ export const certifications = [
     issuer: 'HackerRank',
     logo: new URL('../assets/Certifications/Logos/hacker.png', import.meta.url).href,
     pdf: new URL('../assets/Certifications/Certificates/python_basic certificate.pdf', import.meta.url).href,
-    description: 'Solved coding challenges applying fundamental Python concepts and logic-building skills.',
+    description: 'Solved coding challenges by applying core Python concepts, strengthening problem-solving abilities, and improving logical thinking skills.'
   },
   {
     name: 'Web Development Training',
     issuer: 'Internshala Trainings',
     logo: new URL('../assets/Certifications/Logos/internshala.png', import.meta.url).href,
     pdf: new URL('../assets/Certifications/Certificates/Web Development Training - Certificate of Completion.pdf', import.meta.url).href,
-    description: 'Front-end web development covering HTML, CSS, JavaScript, responsive interfaces, and interactive components.',
+    description: 'Completed front-end web development training covering HTML, CSS, and JavaScript, with a focus on building responsive, user-friendly interfaces and interactive components.',
   },
 ];

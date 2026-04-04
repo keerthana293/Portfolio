@@ -3,7 +3,7 @@ import { projects } from '../data/portfolioData';
 
 function Projects() {
   return (
-    <section id="projects" className="section-projects scroll-mt-24 py-16" aria-labelledby="projects-title">
+    <section id="projects" className="section-projects scroll-mt-24 py-8" aria-labelledby="projects-title">
       <SectionHeading title="Projects" subtitle="Selected builds with practical, user-focused outcomes." />
       <h3 id="projects-title" className="sr-only">
         Project list
